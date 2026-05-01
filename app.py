@@ -10,8 +10,13 @@ def getAbilities(agent):
 def getAgentList():
     agentResponse = requests.get(f"https://valorant-api.com/v1/agents/")
     data = agentResponse.json()
-    for i in 
-    
-    
+    for i in data["data"]:
+        #if i["isPlayableCharacter"] == True:
+            print(i["displayName"])
 
+wantToRun = True
+while wantToRun == True:
+     agentSelect = input("What agent do you want to learn more about?")
+
+getAgentList()
 getAbilities("Gekko")
