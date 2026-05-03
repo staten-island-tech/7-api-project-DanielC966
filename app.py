@@ -16,7 +16,6 @@ def getAgentList():
 
 wantToRun = True
 while wantToRun == True:
-     agentSelect = input("What agent do you want to learn more about?")
-
-getAgentList()
-getAbilities("Gekko")
+     agentSelect = input("What agent do you want to learn more about?\n")
+     print("Abilities: ")
+     getAbilities(agentSelect)
