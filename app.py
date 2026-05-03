@@ -22,9 +22,11 @@ def getAgentList():
 
 wantToRun = True
 while wantToRun == True:
-    agentSelect = input("What agent do you want to learn more about? *Stop with 'n'\n")
+    agentSelect = input("What agent do you want to learn more about? *Stop with 'n'\n'agentList' for the list of agents\n- ")
     if agentSelect == "n":
         break
+    if agentSelect == "agentList":
+        getAgentList()
     for i in data["data"]:
          if agentSelect == i["displayName"]:
             print(f"Info on {agentSelect.upper()}")
