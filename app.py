@@ -15,6 +15,7 @@ def getAgentRole(agent):
     for i in data["data"]:
         if agent == i["displayName"]:
             print(i["role"]["displayName"])
+            print(f'"{i["role"]["description"]}"')
 def getAgentList():
     for i in data["data"]:
         #if i["isPlayableCharacter"] == True:
